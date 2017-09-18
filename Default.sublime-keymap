@@ -277,6 +277,7 @@
     //////////////////////////////
     // Begin I-search //
     //////////////////////////////
+    {"keys": ["ctrl+s"], "command": "nop"},    
     {"keys": ["ctrl+s"], "command": "sbp_inc_search", "args": {"forward": true, "regex": false}, "context": [{"key": "overlay_visible", "operator": "equal", "operand": false}]},
     {"keys": ["ctrl+r"], "command": "nop"},    
     {"keys": ["ctrl+r"], "command": "sbp_inc_search", "args": {"forward": false, "regex": false}, "context": [{"key": "overlay_visible", "operator": "equal", "operand": false}]},
