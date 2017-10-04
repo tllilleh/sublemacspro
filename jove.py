@@ -853,7 +853,7 @@ class SbpKillRegionCommand(SbpTextCommand):
     is_kill_cmd = True
     def run_cmd(self, util, is_copy=False):
         view = self.view
-        regions = util.get_regions()
+        regions = view.sel()
         if regions:
             data = [view.substr(r) for r in regions]
             kill_ring.add(data, True, False)
